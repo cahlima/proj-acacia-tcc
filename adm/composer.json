@@ -1,0 +1,21 @@
+{
+    "description": "Projeto Agendamento TCC",
+    "authors": [
+        {
+            "name": "Acacia Lima",
+            "email": "acacia.lima@ufpr.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+           
+            "Core\\": "core",
+            "App\\": "app",
+            "Adms\\": "app/adms"
+           
+        }
+    },
+    "require": {
+        "slim/slim":"2.0"
+    }
+}
