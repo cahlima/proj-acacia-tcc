@@ -20,11 +20,7 @@ class Professor
               */
 
     public function index()
-    {
-            $this->data = [];
-       $loadView = new \Core\ConfigView("sts/Views/perfil-professor/professor", $this->data);
-       $loadView-> loadView();
-
+    {echo "perfil coordenador";
     }
 
 }

@@ -2,6 +2,8 @@
 
 namespace Core;
 
+use App\adms\Controllers\RecoverPassword;
+
 /**
  * Verificar se existe a classe
  * Carregar a CONTROLLER
@@ -75,7 +77,7 @@ class CarregarPgAdm
      */
     private function pgPublic(): void
     {
-        $this->listPgPublic = ["Login", "Erro", "Logout", "Cadastro", "NewUser"];
+        $this->listPgPublic = ["Login", "Erro", "Logout", "Cadastro", "NewUser", "RecoverPassword", "PerfilCoordenador"];
 
         if (in_array($this->urlController, $this->listPgPublic)) {
             $this->classLoad = "\\App\\adms\\Controllers\\" . $this->urlController;

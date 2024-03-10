@@ -21,7 +21,7 @@ class Coordenador
     public function index()
     {
             $this->data = [];
-       $loadView = new \Core\ConfigView("sts/Views/perfil-coordenador/coordenador", $this->data);
+       $loadView = new \Core\ConfigView("adms/Views/perfilcoordenador/perfilcoordenador", $this->data);
        $loadView-> loadView();
 
     }
